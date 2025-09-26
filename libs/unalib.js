@@ -24,6 +24,7 @@ module.exports = {
     is_valid_url: function(url ){
       var isValid = false;
 
+      if (url.includes(" ")) return false;
       var regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/;
 
       try {
@@ -39,6 +40,7 @@ module.exports = {
   
       // inicializacion lazy
       var isValid = false;
+      if (url.includes(" ")) return false;
       // expresion regular copiada de StackOverflow
       var re = /(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/;
   
@@ -57,6 +59,7 @@ module.exports = {
   
       // inicializacion lazy
       var isValid = false;
+      if (url.includes(" ")) return false;
       // expresion regular copiada de StackOverflow
       var re = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})?$/i;
   
