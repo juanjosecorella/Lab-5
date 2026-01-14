@@ -3,7 +3,7 @@
     "express": "*",
     "express-rate-limit": "^8.1.0",
     "mocha": "^11.0.1",
-    "socket.io": "*"
+    "socket.io": "4.8.3"
   },
   "scripts": {
     "start": "node server.js",
